@@ -70,7 +70,7 @@
     2)
         # Restore data
         echo -e "\e[38;5;93m"
-        read -p "Enter The Name of The Backup File to Restore (without The Path) : " backup_file
+        read -p "Masukkan Nama File Cadangan yang Akan Dipulihkan: " backup_file
         tar -xzvf "$backup_directory/$backup_file" -C /
         echo
         echo "${G}Restore ${PI}completed."
@@ -97,7 +97,7 @@ esac
  echo
 
      if [ "$all" == "yes" ]; then
-         bash Terminal-backup.sh
+         bash TxB.sh
          break
      elif [ "$all" == "no" ]; then
                  echo
